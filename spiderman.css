@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    background: linear-gradient(to bottom, #4A90E2 0%, #7ED321 100%);
+    cursor: crosshair;
+}
+
+.hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px black;
+    z-index: 100;
+}
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 14px;
+    text-shadow: 2px 2px 4px black;
+    z-index: 100;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    z-index: 200;
+    display: none;
+}
